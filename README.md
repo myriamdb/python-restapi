@@ -34,3 +34,12 @@ cd  /M/DEV/TS3D/_training/python-restapi
     in gitbash
       docker-compose run app sh -c "python manage.py test && flake8"
     assertion ==> https://docs.python.org/2/library/unittest.html#assert-method
+
+    ---- clean up ----
+6 - Django user model
+      a - creation of a core application
+        docker-compose run app sh -c "django-admin.py startapp core"
+      b - clean
+      remove tests.py ==> create a folder tests, with inside __init__.py
+      remove views.py
+      c- add the app to the installed app list (app/settings.py)
